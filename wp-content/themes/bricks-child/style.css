@@ -1,0 +1,149 @@
+/*
+ Theme Name:   RWCE27 Digital Information Hub
+ Theme URI:    https://bricksbuilder.io/
+ Description:  Use this child theme to extend Bricks.
+ Author:       Bricks
+ Author URI:   https://bricksbuilder.io/
+ Template:     bricks
+ Version:      1.1
+ Text Domain:  bricks
+*/
+
+
+:root {
+	--space-xs: clamp(0.4444444444rem, calc(0.38647343vw + 0.3574879227rem), 0.6666666667rem);
+	--space-s: clamp(0.6666666667rem, calc(0.5797101449vw + 0.5362318841rem), 1rem);
+	--space-m: clamp(1rem, calc(0.8695652174vw + 0.8043478261rem), 1.5rem);
+	--space-l: clamp(1.5rem, calc(1.3043478261vw + 1.2065217391rem), 2.25rem);
+	--space-xl: clamp(2.25rem, calc(1.9565217391vw + 1.8097826087rem), 3.375rem);
+	--space-xxl: clamp(3.375rem, calc(2.9347826087vw + 2.714673913rem), 5.0625rem);
+	--section-space-xs: clamp(1.3333333333rem, calc(2.3188405797vw + 0.8115942029rem), 2.6666666667rem);
+	--section-space-s: clamp(2rem, calc(3.4782608696vw + 1.2173913043rem), 4rem);
+	--section-space-m: clamp(3rem, calc(5.2173913043vw + 1.8260869565rem), 6rem);
+	--section-space-l: clamp(4.5rem, calc(7.8260869565vw + 2.7391304348rem), 9rem);
+	--section-space-xl: clamp(6.75rem, calc(11.7391304348vw + 4.1086956522rem), 13.5rem);
+	--section-space-xxl: clamp(10.125rem, calc(17.6086956522vw + 6.1630434783rem), 20.25rem);
+	--section-padding-x: clamp(1rem, calc(6.9565217391vw + -0.5652173913rem), 5rem);
+	--gutter: clamp(1rem, calc(6.9565217391vw + -0.5652173913rem), 5rem);
+	--text-xs: clamp(0.75rem, calc(0vw + 0.75rem), 0.75rem);
+	--text-s: clamp(0.875rem, calc(0vw + 0.875rem), 0.875rem);
+	--text-m: clamp(1rem, calc(0vw + 1rem), 1rem);
+	--text-l: clamp(1.125rem, calc(0vw + 1.125rem), 1.125rem);
+	--text-xl: clamp(1.25rem, calc(1.3043478261vw + 0.9565217391rem), 1.25rem);
+/* 	--text-xxl: clamp(1.5rem, calc(1.3043478261vw + 1.2065217391rem), 2.60rem); */
+	--text-xxl: clamp(1.5rem, calc(1.3043478261vw + 1.2065217391rem), 1.5rem);
+	--h6: clamp(1.125rem, calc(0.2173913043vw + 1.0760869565rem), 1.25rem);
+/* 	--h5: clamp(1.25rem, calc(0.4347826087vw + 1.152173913rem),1.875rem); */
+	--h5: 1.875rem;
+	--h4: clamp(1.375rem, calc(0.652173913vw + 1.2282608696rem), 1.625rem);
+/* 	--h4: clamp(1.375rem, calc(0.652173913vw + 1.2282608696rem), 2rem); */
+	--h3: clamp(1.5rem, calc(1.3043478261vw + 1.2065217391rem), 2.5rem);
+/* 	--h2: clamp(1.75rem, calc(1.7391304348vw + 1.3586956522rem), 3rem); */
+	--h2: clamp(1.375rem, calc(0.652173913vw + 1.2282608696rem), 1.875rem);
+	--h1: clamp(2rem, calc(2.6086956522vw + 1.4130434783rem), 3.75rem);
+	--text-display: clamp(2rem, 5.5vw, 65px);
+	--h1-line-height: 1.2;
+	--h1-max-width: 100%;
+	--h2-line-height: 1.1;
+	--h2-max-width: 100%;
+	--h3-line-height: 1.22;
+	--h3-max-width: 100%;
+	--h4-line-height: 1.2308;
+	--h4-max-width: 100%;
+/* 	--h5-line-height: 1.33; */
+	--h5-line-height: 1.0667;
+	--h5-max-width: 100%;
+	--h6-line-height: 1.4;
+	--h6-max-width: 100%;
+	--text-large: clamp(1.25rem, calc(1.3043478261vw + 0.9565217391rem), 1.85rem);
+	--hero-text: clamp(1.25rem, calc(1.3043478261vw + 0.9565217391rem), 1.625rem);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: 0px;
+	font-weight: 600;
+}
+
+.text--display {
+	font-size: var(--text-display);
+	line-height: 1.2;
+	letter-spacing: -3px;
+	font-weight: 500;
+}
+
+.h1 {
+	line-height: var(--h1-line-height) !important;
+	font-size: var(--h1) !important;
+  	font-weight: 800;
+}
+
+.text--s {
+	font-size: var(--text-s);
+}
+
+.text--l {
+	font-size: var(--text-l);
+}
+
+.text--xl {
+	font-size: var(--text-xl);
+}
+
+.text--xxl {
+	font-size: var(--text-xxl);
+}
+
+.text--large {
+	font-size: var(--text-large);
+}
+
+.text--xlarge {
+	font-size: clamp(1.25rem, calc(1.3043478261vw + 0.9565217391rem), 1.95rem);
+}
+
+.text--hero {
+	font-size: var(--hero-text);
+	line-height: 1.43 !important;
+}
+
+.h2 {
+	font-size: var(--h2) !important;
+/* 	line-height: var(--h2-line-height) !important; */
+/* 	letter-spacing: -1.5px; */
+}
+
+.h3 {
+	font-size: var(--h3);
+/* 	line-height: var(--h3-line-height) !important; */
+}
+
+.h4 {
+	font-size: var(--h4);
+	line-height: var(--h4-line-height) !important;
+}
+
+.h5 {
+	font-size: var(--h5);
+	line-height: var(--h5-line-height) !important;
+}
+
+.h6 {
+	font-size: var(--h6);
+	line-height: var(--h6-line-height) !important;
+}
+
+@media (max-width: 768px) {
+	.h5 {
+		font-size: 1.25rem;
+	}
+}
+
+
+/* Option 1: Very specific selector */
+div.brxe-block.rwce__sidemenu-card a.brxe-text-link.active {
+    font-weight: 700 !important;
+    color: #093127 !important;
+}
+
+
